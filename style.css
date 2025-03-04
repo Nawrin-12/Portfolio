@@ -175,15 +175,6 @@ section{
     margin: auto 0;
 }
 
-.section__pic-container-2{
-    display: flex;
-    height: 400px;
-    width: 500px;
-    /* overflow: hidden;
-    border-radius: 50%; */
-    margin: auto 0;
-    padding: 4rem
-}
 
 .section__text{
     align-self: center;
@@ -270,7 +261,7 @@ section{
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 .about-details-container {
@@ -281,10 +272,18 @@ section{
 .about-containers,
 .about-details-container {
     display: flex;
+
 }
 
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 1rem;
+}
+
+.section__pic-container-2{
+    display: flex;
+    height: 450px;
+    width: 800px;
+    margin: auto 0;
 }
 
 .arrow{
@@ -313,6 +312,7 @@ section{
     width: 400px;
     margin: auto 0;
 }
+
 
 #skills{
     position: relative;
