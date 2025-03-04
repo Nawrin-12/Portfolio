@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ishrat Nur Nawrin</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ishrat Nur Nawrin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src=".\Elements\Resume_img.jpg" alt="Ishrat Nur Nawrin Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Ishrat Nur Nawrin</h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Elements/Resume.pdf')">
+                    Download Resume 
+                </button>
+                <button class="btn btn-color-1" onclick="window.open('./#contact')">
+                    Contact Info
+                </button>
+            </div> 
+            <div id="socials-container">
+                <img src="./Elements/linkedin_icon.png" 
+                alt="My Linkedin Profile" class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/ishrat-nur-nawrin-626a2b21b/'"/>
+
+                <img src="./Elements/github_icon.png" 
+                alt="My Github Profile" class="icon" 
+                onclick="location.href='https://github.com/Nawrin-12'"/>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container-2">
+                <img src="./Elements/about_me.jpeg" 
+                alt="Profile picture"
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Elements/education logo.png" 
+                        alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <br>
+                        <p>SSC : 2016<br>B.M.S Girls High School & College, Chittagong</p>
+                        <br>
+                        <p>HSC : 2018 <br>Ispahani Public School & College, Chittagong</p>
+                        <br>
+                        <p>B.Sc in Computer Science & Engineering <br>BRAC University</br> 2019-2023</p>
+                        <br>
+                        <p> M.Sc in Computer Science & Engineering <br> BRAC University</br>2024</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./Elements/achievement.png" 
+                        alt="achievement picture"
+                        class="icon"/>
+                        <h3>Achievements & Extracurriculars </h3>
+                        <br>
+                        <h4>Publication:</h4>
+                        <p>A Comparative Analysis of Deep Learning and Hybrid Models to Diagnose Multi-Class Skin Cancer
+                        <br/>
+                        <a href="https://ieeexplore.ieee.org/document/10212670" target="_blank">Read Paper</a>
+                        <br/>Co-author: Tonusree Talukder, Rafeed Rahman, Annajiat Alim Rasel
+                        <br/> Published in International Conference on Next-Generation Computing, IoT and Machine Learning (NCIM), 2023 
+                        </p>
+                        <br>
+                        <h4>Extracurriculars:</h4>
+                        <p>Photography <br> Art & Crafting <br> Recitation</p>
+                    </div>
+                </div>
+
+                    <div class="text-container">
+                        <p>A highly motivated computer science and engineering graduate from BRAC University with a strong
+                          foundation in machine learning, computer vision, and web development. Passionate about inventive 
+                          research in machine learning and keen to explore interdisciplinary opportunities. Actively seeking 
+                          an opportunity to leverage skills and to build a strong foundation for the dynamic tech industry. 
+                          Beyond academics, has a profound enthusiasm for photography and painting.
+                        </p>
+                    </div>
+                    <img src="Elements/down arrow.jpg" alt="Arrow icon" class="icon arrow"
+                    onclick="location.href='./#skills'"/>
+        </div>
+    </section> 
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Machine Learning</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Deep Learning</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Image Processing</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Computer Vision</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Tensorflow</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Pytorch</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Scikit-learn</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Programming Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Laravel</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Mern Stack</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div> 
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="Elements/checkmark.png" 
+                            alt="Skill-icon"
+                            class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="Elements/down arrow.jpg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Welcome To My</p>
+        <h1 class="title">Project Showcase</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Elements/virtual mouse.png" 
+                    alt="Project 1"
+                    class="project-img"/>
+                </div>
+                <h2 class="skill-sub-title project-title">Virtual Mouse Project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/Virtual_Mouse_Project'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/Virtual_Mouse_Project'">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Elements/audio book.jpg" 
+                    alt="Project 2"
+                    class="project-img"/>
+                </div>
+                <h2 class="skill-sub-title project-title">Audio Book Project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/Audio_Book_Project'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/Virtual_Mouse_Project'">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Elements/project_player tracking.jpg" 
+                    alt="Project 3"
+                    class="project-img"/>
+                </div>
+                <h2 class="skill-sub-title project-title">Football Player Tracking</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/YOLOv8-Football-Tracking'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/Virtual_Mouse_Project'">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Elements/travel diary.jpg" 
+                    alt="Project 4"
+                    class="project-img"/>
+                </div>
+                <h2 class="skill-sub-title project-title">Travel Blog Diary</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/TravelDiary'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/Virtual_Mouse_Project'">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Elements/vac_app.jpg" 
+                    alt="Project 5"
+                    class="project-img"/>
+                </div>
+                <h2 class="skill-sub-title project-title">Vaccination App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/Vaccine_app'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nawrin-12/Virtual_Mouse_Project'">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="Elements/down arrow.jpg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="Elements/Gmail-logo.png"
+                 alt="Email icon"
+                 class="icon contact-icon"/>
+                 <p><a href="mailto:examplemail@gmail.com">ishratnurnawrin5032@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="Elements/linkedin_icon.png"
+                 alt="LinkedIn icon"
+                 class="icon contact-icon linkedin-icon"/>
+                 <p><a href="https://www.linkedin.com/in/ishrat-nur-nawrin-626a2b21b/">
+                    LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Ishrat Nur Nawrin.</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
